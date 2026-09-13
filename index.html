@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Газпром — Главная страница</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-globe"></i> Наши сайты <i class="fas fa-chevron-down"></i></a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-gavel"></i> Реализация активов</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-briefcase"></i> Карьера</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-shopping-cart"></i> Закупки</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="language-switcher">
+          <button class="language-btn">
+            <i class="fas fa-language"></i> RU <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <a href="stub.html" class="language-option">RU</a>
+            <a href="stub.html" class="language-option">EN</a>
+            <a href="stub.html" class="language-option">DE</a>
+          </div>
+        </div>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-search"></i> Поиск</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСНОВНАЯ ШАПКА -->
+  <header class="header">
+    <div class="container header-container">
+
+      <nav class="main-nav nav-left">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="about.html" class="nav-link">О «Газпром»</a></li>
+          <li class="nav-item"><a href="investors.html" class="nav-link">Акционерам и инвесторам</a></li>
+          <li class="nav-item"><a href="press.html" class="nav-link">Пресс-центр</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="logo-img">
+        </a>
+      </div>
+
+      <nav class="main-nav nav-right">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="stub.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Устойчивое развитие</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Противодействие мошенничеству</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контактная информация</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Открыть меню">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link active"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle"></i> О «Газпром»</a></li>
+          <li><a href="investors.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i> Акционерам и инвесторам</a></li>
+          <li><a href="press.html" class="mobile-nav-link"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-hard-hat"></i> Проекты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-leaf"></i> Устойчивое развитие</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shield-alt"></i> Противодействие мошенничеству</a></li>
+          <li><a href="contacts.html" class="mobile-nav-link"><i class="fas fa-address-book"></i> Контактная информация</a></li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-globe"></i> Наши сайты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-gavel"></i> Реализация активов</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Карьера</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shopping-cart"></i> Закупки</a></li>
+        </ul>
+
+        <div class="mobile-language-switcher">
+          <button class="mobile-language-btn" type="button">RU</button>
+          <button class="mobile-language-btn" type="button">EN</button>
+          <button class="mobile-language-btn" type="button">DE</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ПОИСК -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Введите запрос для поиска...">
+        <button class="search-submit" type="button"><i class="fas fa-search"></i> Найти</button>
+      </div>
+      <div class="search-suggestions">
+        <p>Популярные запросы:</p>
+        <div class="suggestion-tags">
+          <a href="stub.html" class="suggestion-tag">Финансовые результаты</a>
+          <a href="stub.html" class="suggestion-tag">Экологические отчеты</a>
+          <a href="stub.html" class="suggestion-tag">Вакансии</a>
+          <a href="stub.html" class="suggestion-tag">СПГ проекты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-title">Энергия для будущего</h1>
+        <p class="hero-text">«Газпром» — глобальная энергетическая компания, обеспечивающая надёжные и экологичные поставки ресурсов по всему миру. Мы строим устойчивое будущее.</p>
+        <div class="hero-buttons">
+          <a href="stub.html" class="btn btn-hero-primary">Наши проекты</a>
+          <a href="about.html" class="btn btn-hero-secondary">Узнать больше</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Наши преимущества</h2>
+        <p class="section-subtitle">Мы лидируем в отрасли благодаря инновациям, масштабу и ответственному подходу.</p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-globe-europe"></i></div>
+            <h3 class="feature-title">Глобальное присутствие</h3>
+            <p class="feature-text">Работаем в десятках стран, обеспечивая энергетическую стабильность на международном уровне.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+            <h3 class="feature-title">Экологическая ответственность</h3>
+            <p class="feature-text">Внедряем передовые технологии для минимизации воздействия на окружающую среду.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="feature-title">Технологии и инновации</h3>
+            <p class="feature-text">Инвестируем в научные исследования и разработки для создания энергетики будущего.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="feature-title">Надёжность</h3>
+            <p class="feature-text">Гарантируем бесперебойные поставки и безопасность всех производственных процессов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НОВОСТИ -->
+    <section class="news-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Последние новости</h2>
+          <a href="press.html" class="link-more">Все новости <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-date">15 января 2026</div>
+            <h3 class="news-title"><a href="stub.html">Запущен новый этап проекта «Сила Сибири-2»</a></h3>
+            <p class="news-excerpt">Подписаны ключевые документы для расширения газотранспортной инфраструктуры.</p>
+          </article>
+
+          <article class="news-card">
+            <div class="news-date">10 января 2026</div>
+            <h3 class="news-title"><a href="stub.html">«Газпром» представил отчёт в области устойчивого развития</a></h3>
+            <p class="news-excerpt">Компания отчиталась о достижении целей по сокращению углеродного следа.</p>
+          </article>
+
+          <article class="news-card">
+            <div class="news-date">25 декабря 2025</div>
+            <h3 class="news-title"><a href="stub.html">Инновации в области СПГ: открыт новый исследовательский центр</a></h3>
+            <p class="news-excerpt">Центр будет заниматься разработкой технологий сжижения и хранения газа.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="footer-logo-img">
+          <p>Публичное акционерное общество<br>«Газпром»</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-title">Компания</h4>
+            <a href="about.html" class="footer-link">О нас</a>
+            <a href="stub.html" class="footer-link">История</a>
+            <a href="stub.html" class="footer-link">Руководство</a>
+            <a href="stub.html" class="footer-link">Карьера</a>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title">Деятельность</h4>
+            <a href="stub.html" class="footer-link">Проекты</a>
+            <a href="stub.html" class="footer-link">Технологии</a>
+            <a href="stub.html" class="footer-link">Экология</a>
+            <a href="stub.html" class="footer-link">Безопасность</a>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title">Инвесторам</h4>
+            <a href="investors.html" class="footer-link">Акции и дивиденды</a>
+            <a href="stub.html" class="footer-link">Финансовая отчётность</a>
+            <a href="stub.html" class="footer-link">Раскрытие информации</a>
+            <a href="stub.html" class="footer-link">События</a>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-title">Контакты</h4>
+            <a href="contacts.html" class="footer-link">Контакты</a>
+            <a href="stub.html" class="footer-link">Для СМИ</a>
+            <a href="stub.html" class="footer-link">Обратная связь</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 ПАО «Газпром». Все права защищены.</p>
+        <div class="social-links">
+          <a href="stub.html" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="stub.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

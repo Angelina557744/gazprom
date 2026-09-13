@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пресс-центр — Газпром</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-globe"></i> Наши сайты <i class="fas fa-chevron-down"></i></a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-gavel"></i> Реализация активов</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-briefcase"></i> Карьера</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-shopping-cart"></i> Закупки</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="language-switcher">
+          <button class="language-btn">
+            <i class="fas fa-language"></i> RU <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <a href="stub.html" class="language-option">RU</a>
+            <a href="stub.html" class="language-option">EN</a>
+            <a href="stub.html" class="language-option">DE</a>
+          </div>
+        </div>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-search"></i> Поиск</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСНОВНАЯ ШАПКА -->
+  <header class="header">
+    <div class="container header-container">
+
+      <nav class="main-nav nav-left">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="about.html" class="nav-link">О «Газпром»</a></li>
+          <li class="nav-item"><a href="investors.html" class="nav-link">Акционерам и инвесторам</a></li>
+          <li class="nav-item"><a href="press.html" class="nav-link active">Пресс-центр</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="logo-img">
+        </a>
+      </div>
+
+      <nav class="main-nav nav-right">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="stub.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Устойчивое развитие</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Противодействие мошенничеству</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контактная информация</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Открыть меню">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle"></i> О «Газпром»</a></li>
+          <li><a href="investors.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i> Акционерам и инвесторам</a></li>
+          <li><a href="press.html" class="mobile-nav-link active"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-hard-hat"></i> Проекты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-leaf"></i> Устойчивое развитие</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shield-alt"></i> Противодействие мошенничеству</a></li>
+          <li><a href="contacts.html" class="mobile-nav-link"><i class="fas fa-address-book"></i> Контактная информация</a></li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-globe"></i> Наши сайты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-gavel"></i> Реализация активов</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Карьера</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shopping-cart"></i> Закупки</a></li>
+        </ul>
+
+        <div class="mobile-language-switcher">
+          <button class="mobile-language-btn" type="button">RU</button>
+          <button class="mobile-language-btn" type="button">EN</button>
+          <button class="mobile-language-btn" type="button">DE</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ПОИСК -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Введите запрос для поиска...">
+        <button class="search-submit" type="button"><i class="fas fa-search"></i> Найти</button>
+      </div>
+      <div class="search-suggestions">
+        <p>Популярные запросы:</p>
+        <div class="suggestion-tags">
+          <a href="stub.html" class="suggestion-tag">Финансовые результаты</a>
+          <a href="stub.html" class="suggestion-tag">Экологические отчёты</a>
+          <a href="stub.html" class="suggestion-tag">Вакансии</a>
+          <a href="stub.html" class="suggestion-tag">СПГ проекты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO С ВКЛАДКАМИ -->
+    <section class="press-hero">
+      <div class="press-hero-content">
+        <h1>Пресс-центр</h1>
+        <p class="press-hero-subtitle">Актуальные новости, события и медиаматериалы о деятельности ПАО «Газпром»</p>
+      </div>
+
+      <div class="press-tabs" data-press-tabs>
+        <button class="tab-btn active" type="button" data-tab="events">
+          <i class="fas fa-calendar-alt"></i> События
+        </button>
+        <button class="tab-btn" type="button" data-tab="media">
+          <i class="fas fa-photo-video"></i> Медиатека
+        </button>
+        <button class="tab-btn" type="button" data-tab="journals">
+          <i class="fas fa-book-open"></i> Журналы
+        </button>
+        <button class="tab-btn" type="button" data-tab="press-service">
+          <i class="fas fa-microphone"></i> Пресс-служба
+        </button>
+        <button class="tab-btn" type="button" data-tab="subscription">
+          <i class="fas fa-rss"></i> RSS и подписка
+        </button>
+      </div>
+    </section>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <div class="press-container">
+
+      <!-- ВКЛАДКА: СОБЫТИЯ -->
+      <div class="tab-content" id="events-tab" data-tab-content="events">
+
+        <div class="miller-column">
+          <div class="miller-header">
+            <div class="miller-avatar"><i class="fas fa-user-tie"></i></div>
+            <div class="miller-info">
+              <h3>Алексей Миллер</h3>
+              <p>Председатель Правления ПАО «Газпром»</p>
+            </div>
+          </div>
+          <div class="miller-text">
+            В 2025 году «Газпром» отработал эффективно, и мы надёжно снабжали чистой энергией наших потребителей. В первую очередь, конечно же, природным газом. Мы регулярно ставили с вами рекорды по поставкам газа из Единой системы газоснабжения России. В 2025 году потребителям из газотранспортной системы «Газпрома» будет поставлено 386 млрд куб. м газа. И это практически абсолютный рекорд за всю историю поставок из Единой системы газоснабжения нашим российским потребителям. С чем я вас и поздравляю!
+          </div>
+        </div>
+
+        <div class="press-grid">
+          <div class="main-news">
+            <div class="news-item featured">
+              <div class="news-content">
+                <div class="news-meta">
+                  <div class="news-date">13 января, 17:40</div>
+                  <div class="news-tags">
+                    <a href="stub.html" class="news-tag">#Китай</a>
+                    <a href="stub.html" class="news-tag">#Сила Сибири</a>
+                  </div>
+                </div>
+                <h2 class="news-title">
+                  <a href="stub.html">«Газпром» второй раз с начала года обновил исторический рекорд суточных поставок газа в Китай по газопроводу «Сила Сибири»</a>
+                </h2>
+                <p class="news-excerpt">Суточные объёмы поставок газа в Китай достигли нового максимума, что подтверждает надёжность и стабильность работы газотранспортной системы.</p>
+                <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-content">
+                <div class="news-meta">
+                  <div class="news-date">14 января, 17:55</div>
+                </div>
+                <h2 class="news-title">
+                  <a href="stub.html">Запасы газа в подземных хранилищах Европы стремятся к историческому минимуму</a>
+                </h2>
+                <p class="news-excerpt">Аналитики отмечают снижение уровня заполненности европейских ПХГ, что может повлиять на стабильность поставок в отопительный сезон.</p>
+                <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="news-item">
+              <div class="news-content">
+                <div class="news-meta">
+                  <div class="news-date">13 января, 09:45</div>
+                </div>
+                <h2 class="news-title">
+                  <a href="stub.html">В 2025 году «Газпром» впервые поставил в Китай больше газа, чем в Европу</a>
+                </h2>
+                <p class="news-excerpt">Изменение структуры экспортных поставок газа отражает переориентацию компании на перспективные азиатские рынки.</p>
+                <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="press-sidebar">
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Новости проектов и регионов</h3>
+              <div class="region-news-list">
+                <div class="region-news-item">
+                  <div class="region-news-date">16 января, 17:10</div>
+                  <a href="stub.html" class="region-news-title">В Кировской области газифицирована деревня Пелевичи</a>
+                </div>
+                <div class="region-news-item">
+                  <div class="region-news-date">16 января, 16:25</div>
+                  <a href="stub.html" class="region-news-title">ООО «Газпром трансгаз Ухта» передана очередная партия техники для нужд СВО</a>
+                </div>
+                <div class="region-news-item">
+                  <div class="region-news-date">16 января, 16:10</div>
+                  <a href="stub.html" class="region-news-title">В ООО «Газпром трансгаз Ухта» поступила новая модель автокрана «Галичанин»</a>
+                </div>
+                <div class="region-news-item">
+                  <div class="region-news-date">15 января, 17:50</div>
+                  <a href="stub.html" class="region-news-title">В селе Озёрный Ивановской области газифицирован пансионат для пожилых людей</a>
+                </div>
+              </div>
+              <a href="stub.html" class="news-link press-sidebar__link">Все региональные новости <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Итоги по месяцам</h3>
+              <p>Аналитические обзоры деятельности компании с детальной статистикой и экспертными комментариями.</p>
+              <a href="stub.html" class="news-link">Смотреть все отчёты <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Противодействие мошенничеству</h3>
+              <p>Информация о мерах, принимаемых компанией для предотвращения мошеннических действий и защиты интересов акционеров.</p>
+              <a href="stub.html" class="news-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </aside>
+        </div>
+
+        <div class="section-header press-section-header">
+          <h2 class="section-title">Последние события</h2>
+          <a href="stub.html" class="section-link">Все события <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="press-grid">
+          <div class="news-item">
+            <div class="news-content">
+              <div class="news-meta"><div class="news-date">16 января, 13:30</div></div>
+              <h2 class="news-title">
+                <a href="stub.html">15 января в единственном подземном хранилище Прибалтики запасы газа опустились ниже 40%</a>
+              </h2>
+              <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-content">
+              <div class="news-meta">
+                <div class="news-date">11 января, 12:50</div>
+                <div class="news-tags">
+                  <a href="stub.html" class="news-tag">#Китай</a>
+                  <a href="stub.html" class="news-tag">#Сила Сибири</a>
+                </div>
+              </div>
+              <h2 class="news-title">
+                <a href="stub.html">«Газпром» обновил исторический рекорд суточных поставок газа в Китай по газопроводу «Сила Сибири»</a>
+              </h2>
+              <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-content">
+              <div class="news-meta"><div class="news-date">8 января, 17:40</div></div>
+              <h2 class="news-title">
+                <a href="stub.html">Европа опять устанавливает максимум отбора газа из подземных хранилищ</a>
+              </h2>
+              <a href="stub.html" class="news-link">Читать полностью <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ВКЛАДКА: МЕДИАТЕКА -->
+      <div class="tab-content" id="media-tab" data-tab-content="media" hidden>
+        <div class="section-header press-section-header">
+          <h2 class="section-title">Медиатека</h2>
+          <p>Фотографии, видео и другие медиаматериалы о деятельности компании</p>
+        </div>
+
+        <div class="media-grid">
+          <div class="media-item">
+            <div class="media-image"><img src="img/photo-1.jpg" alt="Спецвыпуск"></div>
+            <div class="media-content">
+              <span class="media-type">СПЕЦВЫПУСК</span>
+              <h3 class="media-title">Оператор по добыче газа на Ковыктинском месторождении</h3>
+              <div class="media-meta"><i class="far fa-calendar"></i> 14 января — 1 фото</div>
+            </div>
+          </div>
+          <div class="media-item">
+            <div class="media-image"><img src="img/photo-2.jpg" alt="Газовые турбины"></div>
+            <div class="media-content">
+              <span class="media-type">СПЕЦВЫПУСК</span>
+              <h3 class="media-title">Сборка газовых турбин ГПА-32 «Ладога»</h3>
+              <div class="media-meta"><i class="far fa-calendar"></i> 14 января — 1 фото</div>
+            </div>
+          </div>
+          <div class="media-item">
+            <div class="media-image"><img src="img/photo-3.jpg" alt="Новогоднее представление"></div>
+            <div class="media-content">
+              <span class="media-type">СОЦИАЛЬНЫЕ ПРОЕКТЫ</span>
+              <h3 class="media-title">Более 8 тысяч юных астраханцев побывали на новогоднем представлении</h3>
+              <div class="media-meta"><i class="far fa-calendar"></i> 12 января — 10 фото</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ВКЛАДКА: ЖУРНАЛЫ -->
+      <div class="tab-content" id="journals-tab" data-tab-content="journals" hidden>
+        <div class="section-header press-section-header">
+          <h2 class="section-title">Корпоративные журналы</h2>
+          <p>Периодические издания ПАО «Газпром»</p>
+        </div>
+
+        <div class="journals-grid">
+          <div class="journal-item">
+            <div class="journal-icon"><i class="fas fa-book"></i></div>
+            <h3 class="journal-title">ГАЗПРОМ</h3>
+            <p class="journal-meta">Основное корпоративное издание</p>
+            <a href="stub.html" class="journal-link">Читать онлайн</a>
+          </div>
+          <div class="journal-item">
+            <div class="journal-icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="journal-title">УПРАВЛЕНИЕ БЫТОВОЙ ЭНЕРГИИ</h3>
+            <p class="journal-meta">Выпуск от 1 октября 2017 г.</p>
+            <a href="stub.html" class="journal-link">Скачать PDF</a>
+          </div>
+          <div class="journal-item">
+            <div class="journal-icon"><i class="fas fa-tree"></i></div>
+            <h3 class="journal-title">НОВЫЙ ГОД!</h3>
+            <p class="journal-meta">Специальный праздничный выпуск</p>
+            <a href="stub.html" class="journal-link">Читать онлайн</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ВКЛАДКА: ПРЕСС-СЛУЖБА -->
+      <div class="tab-content" id="press-service-tab" data-tab-content="press-service" hidden>
+        <div class="press-service">
+          <h2>Пресс-служба ПАО «Газпром»</h2>
+
+          <div class="press-contacts">
+            <div class="press-contact">
+              <i class="fas fa-phone"></i>
+              <h3>Телефон</h3>
+              <p><a href="tel:+78127294760">+7 812 729-47-60</a></p>
+            </div>
+            <div class="press-contact">
+              <i class="fas fa-envelope"></i>
+              <h3>Электронная почта</h3>
+              <p><a href="mailto:pr@gazprom.ru">pr@gazprom.ru</a></p>
+            </div>
+            <div class="press-contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Адрес</h3>
+              <p>ул. Намёткина, 16, Москва, Россия</p>
+            </div>
+          </div>
+
+          <p class="press-service__text">
+            Пресс-служба ПАО «Газпром» предоставляет информацию для средств массовой информации, организует пресс-конференции, брифинги и другие мероприятия.
+          </p>
+        </div>
+      </div>
+
+      <!-- ВКЛАДКА: ПОДПИСКА -->
+      <div class="tab-content" id="subscription-tab" data-tab-content="subscription" hidden>
+        <div class="press-service">
+          <h2>Подписка на новости</h2>
+          <p>Будьте в курсе последних событий и новостей компании</p>
+
+          <div class="subscription-buttons">
+            <a href="stub.html" class="subscription-btn"><i class="fas fa-rss"></i> RSS лента</a>
+            <a href="stub.html" class="subscription-btn"><i class="fas fa-envelope"></i> Email рассылка</a>
+            <a href="stub.html" class="subscription-btn"><i class="fab fa-telegram"></i> Telegram канал</a>
+          </div>
+
+          <div class="press-service__social">
+            <h3 class="press-service__social-title">«Газпром» в социальных сетях</h3>
+            <div class="social-icons social-icons--center">
+              <a href="stub.html" class="social-icon" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+              <a href="stub.html" class="social-icon" title="Telegram"><i class="fab fa-telegram"></i></a>
+              <a href="stub.html" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="stub.html" class="social-icon" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="footer-logo-img">
+          <p>Публичное акционерное общество<br>«Газпром»</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-title">Пресс-центр</h4>
+            <a href="stub.html" class="footer-link">События</a>
+            <a href="stub.html" class="footer-link">Медиатека</a>
+            <a href="stub.html" class="footer-link">Журналы</a>
+            <a href="stub.html" class="footer-link">Пресс-служба</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Информация</h4>
+            <a href="stub.html" class="footer-link">Итоги по месяцам</a>
+            <a href="stub.html" class="footer-link">Противодействие мошенничеству</a>
+            <a href="stub.html" class="footer-link">Международная выставка-форум</a>
+            <a href="stub.html" class="footer-link">Карта сайта</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Контакты</h4>
+            <a href="contacts.html" class="footer-link">Контактная информация</a>
+            <a href="stub.html" class="footer-link">Для СМИ</a>
+            <a href="stub.html" class="footer-link">Обратная связь</a>
+            <a href="stub.html" class="footer-link">Раскрытие информации</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 ПАО «Газпром». Все права защищены.</p>
+        <div class="social-links">
+          <a href="stub.html" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="stub.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

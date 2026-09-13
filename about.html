@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании — Газпром</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-globe"></i> Наши сайты <i class="fas fa-chevron-down"></i></a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-gavel"></i> Реализация активов</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-briefcase"></i> Карьера</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-shopping-cart"></i> Закупки</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="language-switcher">
+          <button class="language-btn">
+            <i class="fas fa-language"></i> RU <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <a href="stub.html" class="language-option">RU</a>
+            <a href="stub.html" class="language-option">EN</a>
+            <a href="stub.html" class="language-option">DE</a>
+          </div>
+        </div>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-search"></i> Поиск</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСНОВНАЯ ШАПКА -->
+  <header class="header">
+    <div class="container header-container">
+
+      <nav class="main-nav nav-left">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="about.html" class="nav-link active">О «Газпром»</a></li>
+          <li class="nav-item"><a href="investors.html" class="nav-link">Акционерам и инвесторам</a></li>
+          <li class="nav-item"><a href="press.html" class="nav-link">Пресс-центр</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="logo-img">
+        </a>
+      </div>
+
+      <nav class="main-nav nav-right">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="stub.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Устойчивое развитие</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Противодействие мошенничеству</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link">Контактная информация</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Открыть меню">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="about.html" class="mobile-nav-link active"><i class="fas fa-info-circle"></i> О «Газпром»</a></li>
+          <li><a href="investors.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i> Акционерам и инвесторам</a></li>
+          <li><a href="press.html" class="mobile-nav-link"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-hard-hat"></i> Проекты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-leaf"></i> Устойчивое развитие</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shield-alt"></i> Противодействие мошенничеству</a></li>
+          <li><a href="contacts.html" class="mobile-nav-link"><i class="fas fa-address-book"></i> Контактная информация</a></li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-globe"></i> Наши сайты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-gavel"></i> Реализация активов</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Карьера</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shopping-cart"></i> Закупки</a></li>
+        </ul>
+
+        <div class="mobile-language-switcher">
+          <button class="mobile-language-btn" type="button">RU</button>
+          <button class="mobile-language-btn" type="button">EN</button>
+          <button class="mobile-language-btn" type="button">DE</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ПОИСК -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Введите запрос для поиска...">
+        <button class="search-submit" type="button"><i class="fas fa-search"></i> Найти</button>
+      </div>
+      <div class="search-suggestions">
+        <p>Популярные запросы:</p>
+        <div class="suggestion-tags">
+          <a href="stub.html" class="suggestion-tag">Финансовые результаты</a>
+          <a href="stub.html" class="suggestion-tag">Экологические отчёты</a>
+          <a href="stub.html" class="suggestion-tag">Вакансии</a>
+          <a href="stub.html" class="suggestion-tag">СПГ проекты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <h1>О компании «Газпром»</h1>
+        <p>ПАО «Газпром» — глобальная энергетическая компания. Основные направления деятельности — геологоразведка, добыча, транспортировка, хранение, переработка и реализация газа, газового конденсата и нефти, реализация газа в качестве моторного топлива, а также производство и сбыт тепло- и электроэнергии.</p>
+      </div>
+    </section>
+
+    <!-- БЛОК 1: МИССИЯ -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Миссия и стратегия</h2>
+          <p class="section-text"><strong>Миссия «Газпрома»</strong> — надёжное, эффективное и сбалансированное обеспечение потребителей природным газом, другими видами энергоресурсов и продуктами их переработки.</p>
+          <p class="section-text"><strong>Стратегическая цель</strong> — укрепление статуса лидера среди глобальных энергетических компаний посредством диверсификации рынков сбыта, обеспечения энергетической безопасности и устойчивого развития, роста эффективности деятельности, использования научно-технического потенциала.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-1.jpg" alt="Современное газовое месторождение">
+          </div>
+          <div class="image-caption">Современная инфраструктура для добычи и переработки ресурсов</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 2: ПРИРОДНЫЙ ГАЗ -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Что такое природный газ</h2>
+          <p class="section-text">«Газпром» располагает самыми богатыми в мире запасами природного газа.</p>
+          <p class="section-text">Компания является мировым лидером по добыче природного газа. В настоящее время «Газпром» активно реализует масштабные проекты по освоению газовых ресурсов полуострова Ямал, арктического шельфа, Восточной Сибири и Дальнего Востока, а также ряд проектов по разведке и добыче углеводородов за рубежом.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-2.jpg" alt="Буровая площадка разведочной скважины">
+          </div>
+          <div class="image-caption">Буровая площадка разведочной скважины</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 3: ТРАНСПОРТИРОВКА -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Транспортировка и поставки</h2>
+          <p class="section-text">«Газпром» — надёжный поставщик газа российским и зарубежным потребителям. Компании принадлежит крупнейшая в мире газотранспортная система, протяжённость которой составляет 181,6 тыс. км на территории России.</p>
+          <p class="section-text">На внутреннем рынке «Газпром» реализует свыше половины продаваемого газа. Кроме того, компания поставляет газ в страны ближнего и дальнего зарубежья.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-3.jpg" alt="Заполярное месторождение">
+          </div>
+          <div class="image-caption">Заполярное месторождение</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 4: СПГ -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Сжиженный природный газ (СПГ)</h2>
+          <p class="section-text">Группа «Газпром» является ключевым производителем и экспортёром сжиженного природного газа (СПГ) в России.</p>
+          <p class="section-text">Компания успешно развивает торговлю СПГ в рамках действующего проекта «Сахалин-2», а также реализует новые проекты, которые позволят «Газпрому» значительно усилить свои позиции на быстрорастущем мировом рынке СПГ.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-4.jpg" alt="Производственный комплекс «Пригородное»">
+          </div>
+          <div class="image-caption">Производственный комплекс «Пригородное» проекта «Сахалин-2»</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 5: НЕФТЬ И ЭЛЕКТРОЭНЕРГИЯ -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Нефть и электроэнергия</h2>
+          <p class="section-text">Компания является одним из крупнейших производителей нефти в Российской Федерации. «Газпром» также владеет крупными генерирующими активами на территории России.</p>
+          <p class="section-text">Кроме того, компания занимает первое место в стране по производству тепловой энергии.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-5.jpg" alt="Гидроэлектростанция «Нива ГЭС-2»">
+          </div>
+          <div class="image-caption">Гидроэлектростанция «Нива ГЭС-2» в Мурманской области</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 6: ЭКОЛОГИЯ -->
+    <section class="content-section">
+      <div class="content-container">
+        <div class="text-content">
+          <h2 class="section-title">Экологические технологии</h2>
+          <p class="section-text">«Газпром» является примером эффективного использования экологичных технологий по всей производственной цепочке. Компания стремится минимизировать воздействие на окружающую среду и сохранять природное разнообразие в регионах своей деятельности.</p>
+        </div>
+        <div class="image-content">
+          <div class="image-frame">
+            <img src="img/photo-3.jpg" alt="Оленьи стада на Бованенковском месторождении">
+          </div>
+          <div class="image-caption">Оленьи стада на Бованенковском месторождении</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- РЕГИСТРАЦИОННАЯ ИНФОРМАЦИЯ -->
+    <section class="legal-info">
+      <div class="legal-container">
+        <h2 class="legal-title">Регистрационная информация</h2>
+        <div class="legal-grid">
+          <div class="legal-card">
+            <h3>Наименование компании</h3>
+            <div class="legal-item"><strong>полное:</strong> Публичное акционерное общество «Газпром»</div>
+            <div class="legal-item"><strong>сокращённое:</strong> ПАО «Газпром»</div>
+          </div>
+          <div class="legal-card">
+            <h3>Регистрационные данные</h3>
+            <div class="legal-item"><strong>ОГРН:</strong> 1027700070518</div>
+            <div class="legal-item"><strong>ИНН:</strong> 7736050003</div>
+            <div class="legal-item"><strong>КПП:</strong> 997250001</div>
+          </div>
+          <div class="legal-card">
+            <h3>Дополнительная информация</h3>
+            <div class="legal-item"><strong>Свидетельство:</strong> № 022.726 (выдано Московской регистрационной Палатой 25.02.93 г.)</div>
+            <div class="legal-item"><strong>ОКТМО:</strong> 45908000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="footer-logo-img">
+          <p>Публичное акционерное общество<br>«Газпром»</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-title">Компания</h4>
+            <a href="about.html" class="footer-link">О нас</a>
+            <a href="stub.html" class="footer-link">История</a>
+            <a href="stub.html" class="footer-link">Руководство</a>
+            <a href="stub.html" class="footer-link">Карьера</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Деятельность</h4>
+            <a href="stub.html" class="footer-link">Проекты</a>
+            <a href="stub.html" class="footer-link">Технологии</a>
+            <a href="stub.html" class="footer-link">Экология</a>
+            <a href="stub.html" class="footer-link">Безопасность</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Инвесторам</h4>
+            <a href="investors.html" class="footer-link">Акции и дивиденды</a>
+            <a href="stub.html" class="footer-link">Финансовая отчётность</a>
+            <a href="stub.html" class="footer-link">Раскрытие информации</a>
+            <a href="stub.html" class="footer-link">События</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Контакты</h4>
+            <a href="contacts.html" class="footer-link">Контакты</a>
+            <a href="stub.html" class="footer-link">Для СМИ</a>
+            <a href="stub.html" class="footer-link">Обратная связь</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 ПАО «Газпром». Все права защищены.</p>
+        <div class="social-links">
+          <a href="stub.html" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="stub.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Газпром</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-globe"></i> Наши сайты <i class="fas fa-chevron-down"></i></a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-gavel"></i> Реализация активов</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-briefcase"></i> Карьера</a>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-shopping-cart"></i> Закупки</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="language-switcher">
+          <button class="language-btn">
+            <i class="fas fa-language"></i> RU <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <a href="stub.html" class="language-option">RU</a>
+            <a href="stub.html" class="language-option">EN</a>
+            <a href="stub.html" class="language-option">DE</a>
+          </div>
+        </div>
+        <a href="stub.html" class="top-bar-link"><i class="fas fa-search"></i> Поиск</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ОСНОВНАЯ ШАПКА -->
+  <header class="header">
+    <div class="container header-container">
+
+      <nav class="main-nav nav-left">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="about.html" class="nav-link">О «Газпром»</a></li>
+          <li class="nav-item"><a href="investors.html" class="nav-link">Акционерам и инвесторам</a></li>
+          <li class="nav-item"><a href="press.html" class="nav-link">Пресс-центр</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="logo-img">
+        </a>
+      </div>
+
+      <nav class="main-nav nav-right">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="stub.html" class="nav-link">Проекты</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Устойчивое развитие</a></li>
+          <li class="nav-item"><a href="stub.html" class="nav-link">Противодействие мошенничеству</a></li>
+          <li class="nav-item"><a href="contacts.html" class="nav-link active">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Открыть меню">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <button class="mobile-menu-close" id="mobileMenuClose" type="button" aria-label="Закрыть меню">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="about.html" class="mobile-nav-link"><i class="fas fa-info-circle"></i> О «Газпром»</a></li>
+          <li><a href="investors.html" class="mobile-nav-link"><i class="fas fa-chart-line"></i> Акционерам и инвесторам</a></li>
+          <li><a href="press.html" class="mobile-nav-link"><i class="fas fa-newspaper"></i> Пресс-центр</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-hard-hat"></i> Проекты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-leaf"></i> Устойчивое развитие</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shield-alt"></i> Противодействие мошенничеству</a></li>
+          <li><a href="contacts.html" class="mobile-nav-link active"><i class="fas fa-address-book"></i> Контактная информация</a></li>
+        </ul>
+
+        <div class="mobile-menu-divider"></div>
+
+        <ul class="mobile-nav-list">
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-globe"></i> Наши сайты</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-gavel"></i> Реализация активов</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Карьера</a></li>
+          <li><a href="stub.html" class="mobile-nav-link"><i class="fas fa-shopping-cart"></i> Закупки</a></li>
+        </ul>
+
+        <div class="mobile-language-switcher">
+          <button class="mobile-language-btn" type="button">RU</button>
+          <button class="mobile-language-btn" type="button">EN</button>
+          <button class="mobile-language-btn" type="button">DE</button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ПОИСК -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="search-input-container">
+        <input type="text" class="search-input" placeholder="Введите запрос для поиска...">
+        <button class="search-submit" type="button"><i class="fas fa-search"></i> Найти</button>
+      </div>
+      <div class="search-suggestions">
+        <p>Популярные запросы:</p>
+        <div class="suggestion-tags">
+          <a href="stub.html" class="suggestion-tag">Финансовые результаты</a>
+          <a href="stub.html" class="suggestion-tag">Экологические отчёты</a>
+          <a href="stub.html" class="suggestion-tag">Вакансии</a>
+          <a href="stub.html" class="suggestion-tag">СПГ проекты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO КОНТАКТОВ -->
+    <section class="contacts-hero">
+      <div class="container">
+        <div class="contacts-hero-content">
+          <h1>Контактная информация ПАО «Газпром»</h1>
+          <p>Свяжитесь с нами удобным для вас способом</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="contacts-container">
+      <div class="container">
+
+        <div class="contacts-grid">
+
+          <!-- ОСНОВНАЯ ЧАСТЬ -->
+          <div class="contacts-main">
+
+            <div class="contact-section">
+              <h2 class="contact-title">Адреса</h2>
+              <div class="address-grid">
+                <div class="address-card">
+                  <div class="address-icon"><i class="fas fa-envelope"></i></div>
+                  <h3>Почтовая корреспонденция</h3>
+                  <p>БОКС № 1255, Санкт-Петербург, 200961</p>
+                </div>
+                <div class="address-card">
+                  <div class="address-icon"><i class="fas fa-user-tie"></i></div>
+                  <h3>Приём корреспонденции нарочным</h3>
+                  <p>Высотная улица, д. 1А, стр. 1, Санкт-Петербург</p>
+                </div>
+                <div class="address-card">
+                  <div class="address-icon"><i class="fas fa-building"></i></div>
+                  <h3>Местонахождение</h3>
+                  <p>Лахтинский проспект, д. 2, корп. 3, стр. 1, Санкт-Петербург, 197229</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h2 class="contact-title">Телефонная связь</h2>
+              <div class="phones-grid">
+                <div class="phone-card">
+                  <div class="phone-icon"><i class="fas fa-phone"></i></div>
+                  <h3>Справочная служба</h3>
+                  <p><a href="tel:+78124137444">+7 812 413-74-44</a></p>
+                  <small>(справочный)</small>
+                </div>
+                <div class="phone-card">
+                  <div class="phone-icon"><i class="fas fa-fax"></i></div>
+                  <h3>Факс</h3>
+                  <p><a href="tel:+78124137445">+7 812 413-74-45</a></p>
+                </div>
+                <div class="phone-card">
+                  <div class="phone-icon"><i class="fas fa-newspaper"></i></div>
+                  <h3>Пресс-служба</h3>
+                  <p><a href="tel:+78127294760">+7 812 729-47-60</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h2 class="contact-title">Электронная почта</h2>
+              <div class="email-grid">
+                <div class="email-card">
+                  <div class="email-icon"><i class="fas fa-at"></i></div>
+                  <h3>Общие вопросы</h3>
+                  <p><a href="mailto:gazprom@gazprom.ru">gazprom@gazprom.ru</a></p>
+                </div>
+                <div class="email-card">
+                  <div class="email-icon"><i class="fas fa-laptop-code"></i></div>
+                  <h3>Работа сайта</h3>
+                  <p><a href="mailto:webmaster@gazprom.ru">webmaster@gazprom.ru</a></p>
+                  <small>для приёма замечаний по работе сайта</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h2 class="contact-title">Официальные сайты</h2>
+              <div class="sites-grid">
+                <a href="https://www.gazprom.ru" class="site-link" target="_blank" rel="noopener">
+                  <i class="fas fa-globe"></i>
+                  <span>www.gazprom.ru</span>
+                  <small>русская версия</small>
+                </a>
+                <a href="https://www.gazprom.com" class="site-link" target="_blank" rel="noopener">
+                  <i class="fas fa-globe"></i>
+                  <span>www.gazprom.com</span>
+                  <small>английская версия</small>
+                </a>
+                <a href="https://www.gazprom.de" class="site-link" target="_blank" rel="noopener">
+                  <i class="fas fa-globe"></i>
+                  <span>www.gazprom.de</span>
+                  <small>немецкая версия</small>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- САЙДБАР -->
+          <aside class="contacts-sidebar">
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Быстрые контакты</h3>
+              <div class="quick-contacts">
+                <div class="quick-contact">
+                  <div class="quick-icon"><i class="fas fa-users"></i></div>
+                  <div class="quick-info">
+                    <h4>Акционерам</h4>
+                    <p><a href="tel:+78127293124">+7 812 729-31-24</a></p>
+                  </div>
+                </div>
+                <div class="quick-contact">
+                  <div class="quick-icon"><i class="fas fa-chart-line"></i></div>
+                  <div class="quick-info">
+                    <h4>Инвесторам</h4>
+                    <p><a href="tel:+78127296014">+7 812 729-60-14</a></p>
+                  </div>
+                </div>
+                <div class="quick-contact">
+                  <div class="quick-icon"><i class="fas fa-gavel"></i></div>
+                  <div class="quick-info">
+                    <h4>Третейский суд</h4>
+                    <p><a href="tel:+78127292608">+7 812 729-26-08</a></p>
+                  </div>
+                </div>
+                <div class="quick-contact">
+                  <div class="quick-icon"><i class="fas fa-briefcase"></i></div>
+                  <div class="quick-info">
+                    <h4>Вакансии</h4>
+                    <p><a href="https://www.gazpromvacancy.ru" target="_blank" rel="noopener">www.gazpromvacancy.ru</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Социальные сети</h3>
+              <div class="social-contacts">
+                <a href="stub.html" class="social-contact" target="_blank" rel="noopener">
+                  <i class="fab fa-vk"></i>
+                  <span>ВКонтакте</span>
+                </a>
+                <a href="stub.html" class="social-contact" target="_blank" rel="noopener">
+                  <i class="fab fa-telegram"></i>
+                  <span>Telegram</span>
+                </a>
+                <a href="stub.html" class="social-contact" target="_blank" rel="noopener">
+                  <i class="fab fa-youtube"></i>
+                  <span>YouTube</span>
+                </a>
+                <a href="stub.html" class="social-contact" target="_blank" rel="noopener">
+                  <i class="fab fa-odnoklassniki"></i>
+                  <span>Одноклассники</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="sidebar-block fraud-block">
+              <h3 class="sidebar-title">Противодействие мошенничеству</h3>
+              <div class="fraud-contact">
+                <div class="fraud-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="fraud-info">
+                  <h4>Горячая линия</h4>
+                  <p><a href="tel:+78126131188">+7 812 613-11-88</a></p>
+                  <p><small>Факс: +7 812 613-11-92</small></p>
+                  <p><a href="mailto:hotline@ss.gazprom.ru">hotline@ss.gazprom.ru</a></p>
+                  <p class="fraud-address">BOX 1255, Санкт-Петербург, 190000</p>
+                  <p class="fraud-department">Служба корпоративной защиты ПАО «Газпром»</p>
+                </div>
+              </div>
+              <a href="stub.html" class="fraud-link">Подробнее о противодействии мошенничеству</a>
+            </div>
+
+            <div class="sidebar-block">
+              <h3 class="sidebar-title">Фотографии офиса</h3>
+              <div class="office-photos">
+                <div class="photo-placeholder">
+                  <i class="fas fa-image"></i>
+                  <p>Фотография офиса</p>
+                </div>
+                <div class="photo-placeholder">
+                  <i class="fas fa-image"></i>
+                  <p>Фотография офиса</p>
+                </div>
+              </div>
+              <a href="stub.html" class="lakhta-link">
+                <i class="fas fa-external-link-alt"></i>
+                Сайт «Лахта Центра»
+              </a>
+            </div>
+
+          </aside>
+        </div>
+
+        <!-- КАРТА -->
+        <div class="map-section">
+          <h2 class="map-title">Местоположение на карте</h2>
+          <div id="map"></div>
+          <div class="map-address">
+            <p><strong>Лахтинский проспект, д. 2, корп. 3, стр. 1</strong></p>
+            <p>Санкт-Петербург, 197229</p>
+          </div>
+        </div>
+
+        <!-- РЕГИСТРАЦИОННАЯ ИНФОРМАЦИЯ -->
+        <div class="legal-section">
+          <h2 class="legal-title">Регистрационная информация</h2>
+          <div class="legal-grid">
+            <div class="legal-card">
+              <h3>Наименование компании</h3>
+              <div class="legal-item"><strong>полное:</strong> Публичное акционерное общество «Газпром»</div>
+              <div class="legal-item"><strong>сокращённое:</strong> ПАО «Газпром»</div>
+            </div>
+            <div class="legal-card">
+              <h3>Регистрационные данные</h3>
+              <div class="legal-item"><strong>ОГРН:</strong> 1027700070518</div>
+              <div class="legal-item"><strong>ИНН:</strong> 7736050003</div>
+              <div class="legal-item"><strong>КПП:</strong> 997250001</div>
+            </div>
+            <div class="legal-card">
+              <h3>Дополнительная информация</h3>
+              <div class="legal-item"><strong>Свидетельство:</strong> № 022.726 (выдано Московской регистрационной Палатой 25.02.93 г.)</div>
+              <div class="legal-item"><strong>ОКТМО:</strong> 40321000</div>
+              <div class="legal-item"><strong>Телеграф:</strong> 111012 «Синтин»; 121805 GAZ RU; 121806 GAZ RU</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.jpg" alt="Логотип Газпром" class="footer-logo-img">
+          <p>Публичное акционерное общество<br>«Газпром»</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4 class="footer-title">Контакты</h4>
+            <a href="contacts.html" class="footer-link">Контактная информация</a>
+            <a href="stub.html" class="footer-link">Противодействие мошенничеству</a>
+            <a href="stub.html" class="footer-link">Часто задаваемые вопросы</a>
+            <a href="stub.html" class="footer-link">Информаторий</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Ресурсы</h4>
+            <a href="https://www.gazprom.ru" class="footer-link" target="_blank" rel="noopener">Русская версия сайта</a>
+            <a href="https://www.gazprom.com" class="footer-link" target="_blank" rel="noopener">Английская версия</a>
+            <a href="https://www.gazprom.de" class="footer-link" target="_blank" rel="noopener">Немецкая версия</a>
+            <a href="stub.html" class="footer-link">Карта сайта</a>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-title">Правовая информация</h4>
+            <a href="stub.html" class="footer-link">Условия использования</a>
+            <a href="stub.html" class="footer-link">Политика конфиденциальности</a>
+            <a href="stub.html" class="footer-link">Раскрытие информации</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2003–2026 ПАО «Газпром». Все права защищены.</p>
+        <div class="social-links">
+          <a href="stub.html" class="social-link" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="stub.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="stub.html" class="social-link" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

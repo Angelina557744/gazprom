@@ -2289,36 +2289,32 @@ img {
     font-size: 3rem;
   }
 }
-
 /* =========================================================
    АДАПТИВ
    ========================================================= */
+
+/* ===== Планшеты: ≤ 1200px ===== */
 @media (max-width: 1200px) {
   .main-nav .nav-list {
-    gap: 20px;
+    gap: 18px;
+  }
+
+  .main-nav .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .logo-container {
+    margin: 0 20px;
+  }
+
+  .logo-img {
+    height: 42px;
   }
 }
 
-@media (max-width: 1100px) {
-  .investors-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .investors-sidebar {
-    order: 2;
-  }
-
-  .investors-main {
-    order: 1;
-  }
-
-  .contacts-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* ===== Планшеты: ≤ 992px ===== */
 @media (max-width: 992px) {
+  /* Скрываем верхнюю панель и десктопные меню */
   .top-bar {
     display: none;
   }
@@ -2327,14 +2323,36 @@ img {
     display: none;
   }
 
+  /* Показываем бургер */
   .mobile-menu-btn {
     display: block;
+    position: relative;
+    z-index: 130;
+  }
+
+  .header-container {
+    padding: 12px 20px;
+    justify-content: space-between;
   }
 
   .logo-container {
     margin: 0;
   }
 
+  .logo-img {
+    height: 44px;
+  }
+
+  /* Мобильное меню — на всякий случай */
+  .mobile-menu-overlay {
+    display: none;
+  }
+
+  .mobile-menu-overlay[style*="display: block"] {
+    display: block;
+  }
+
+  /* Футер */
   .footer-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2344,6 +2362,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Чередующиеся блоки «О компании» */
   .content-container {
     flex-direction: column !important;
     gap: 40px;
@@ -2361,6 +2380,26 @@ img {
     min-height: 280px;
   }
 
+  /* Инвесторы */
+  .investors-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .investors-sidebar {
+    order: 2;
+  }
+
+  .investors-main {
+    order: 1;
+  }
+
+  /* Контакты */
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Пресс-центр */
   .press-grid {
     grid-template-columns: 1fr;
   }
@@ -2380,56 +2419,213 @@ img {
   }
 }
 
+/* ===== Мобильные: ≤ 768px ===== */
 @media (max-width: 768px) {
-  .hero {
-    min-height: auto;
-    padding: 100px 0 60px;
+  html,
+  body {
+    overflow-x: clip;
   }
 
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
+  /* ----- HEADER ----- */
+  .header-container {
+    padding: 10px 16px;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .mobile-menu-btn {
+    font-size: 1.4rem;
+    padding: 8px;
+  }
+
+  /* ----- МОБИЛЬНОЕ МЕНЮ ----- */
+  .mobile-menu-container {
+    width: 100%;
+    max-width: 340px;
+    padding: 16px 20px 32px;
+  }
+
+  .mobile-menu-close {
+    font-size: 1.4rem;
+    padding: 8px;
+  }
+
+  .mobile-nav-link {
+    padding: 14px 8px;
+    font-size: 15px;
+  }
+
+  .mobile-nav-link i {
+    width: 20px;
+  }
+
+  .mobile-language-btn {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* ----- HERO (главная) ----- */
+  .hero {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    margin-bottom: 28px;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
   }
 
   .btn {
     width: 100%;
+    padding: 14px 24px;
+    font-size: 0.95rem;
   }
 
+  /* ----- Общие заголовки ----- */
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+
+  .section-header .section-title {
+    text-align: left;
+  }
+
+  /* ----- Преимущества (главная) ----- */
+  .features {
+    padding: 56px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 28px 20px;
+  }
+
+  /* ----- Новости (главная) ----- */
+  .news-preview {
+    padding: 56px 0;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .news-card {
+    padding: 24px 20px;
+  }
+
+  /* ----- About hero ----- */
   .about-hero {
-    padding: 120px 0 70px;
+    padding: 100px 0 60px;
   }
 
   .about-hero h1 {
     font-size: 1.9rem;
   }
 
-  .content-section {
-    padding: 60px 0;
+  .about-hero p {
+    font-size: 1rem;
   }
 
-  .legal-grid {
-    grid-template-columns: 1fr;
+  /* ----- Content section (чередующиеся) ----- */
+  .content-section {
+    padding: 56px 0;
+  }
+
+  .content-container {
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .content-section .section-title {
+    font-size: 1.6rem;
   }
 
   .section-text {
     font-size: 1rem;
+    line-height: 1.7;
   }
 
+  .image-caption {
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+
+  /* ----- Legal info ----- */
+  .legal-info,
+  .legal-section {
+    padding: 48px 0;
+  }
+
+  .legal-title {
+    font-size: 1.5rem;
+    margin-bottom: 28px;
+  }
+
+  .legal-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .legal-item strong {
+    min-width: 100px;
+  }
+
+  /* ----- Contacts hero ----- */
   .contacts-hero {
-    padding: 120px 0 60px;
+    padding: 100px 0 60px;
   }
 
   .contacts-hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .contacts-hero p {
+    font-size: 1rem;
+  }
+
+  .contacts-container {
+    padding: 48px 0;
+  }
+
+  .contacts-grid {
+    gap: 32px;
+    margin-bottom: 40px;
   }
 
   .contact-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
 
   .address-grid,
@@ -2438,37 +2634,85 @@ img {
   .sites-grid,
   .social-contacts {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .address-card,
+  .phone-card,
+  .email-card {
+    padding: 20px;
+  }
+
+  .site-link {
+    padding: 16px;
+  }
+
+  .site-link:hover {
+    transform: none;
+  }
+
+  .quick-contact {
+    gap: 12px;
   }
 
   .map-section,
   .legal-section {
-    padding: 25px;
+    padding: 24px 20px;
+    margin-bottom: 40px;
+  }
+
+  .map-title {
+    font-size: 1.4rem;
   }
 
   #map {
     height: 300px;
   }
 
+  /* ----- Investors hero ----- */
   .investors-hero {
-    padding: 120px 0 60px;
+    padding: 100px 0 60px;
   }
 
   .investors-hero h1 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
-  .section-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .investors-hero p {
+    font-size: 1rem;
   }
 
-  .section-link {
-    margin-top: 10px;
+  .investors-container {
+    padding: 40px 16px;
+  }
+
+  .investors-sidebar {
+    padding: 22px 20px;
+  }
+
+  .sidebar-title {
+    font-size: 1.1rem;
+  }
+
+  .sidebar-link {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .info-card {
+    padding: 20px;
   }
 
   .release-item {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    padding: 16px;
   }
 
   .release-date {
@@ -2476,10 +2720,27 @@ img {
     align-self: flex-start;
   }
 
+  .reporting-table {
+    display: block;
+    overflow-x: auto;
+    font-size: 14px;
+  }
+
+  .reporting-table th,
+  .reporting-table td {
+    padding: 12px 14px;
+    white-space: nowrap;
+  }
+
   .handbook-block {
     flex-direction: column;
     text-align: center;
-    gap: 25px;
+    gap: 20px;
+    padding: 28px 20px;
+  }
+
+  .handbook-content h3 {
+    font-size: 1.3rem;
   }
 
   .handbook-btn {
@@ -2487,79 +2748,19 @@ img {
     justify-content: center;
   }
 
-  .reporting-table {
-    display: block;
-    overflow-x: auto;
-  }
-
-  .press-hero {
-    padding: 120px 0 70px;
-  }
-
-  .press-hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .press-tabs {
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: translate(-50%, 50%);
-  }
-
-  .press-container {
-    margin-top: 100px;
-  }
-
-  .miller-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .miller-avatar {
-    margin-right: 0;
-  }
-
-  .press-contacts {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .journals-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .features-grid,
-  .news-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .contacts-hero h1 {
-    font-size: 1.7rem;
-  }
-
-  .contacts-hero p {
-    font-size: 1rem;
-  }
-
-  .info-grid {
-    grid-template-columns: 1fr;
+  .social-block {
+    padding: 28px 20px;
   }
 
   .social-icon {
     width: 50px;
     height: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  /* ----- Press hero ----- */
+  .press-hero {
+    padding: 100px 0 60px;
   }
 
   .press-hero h1 {
@@ -2568,23 +2769,265 @@ img {
 
   .press-hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .press-tabs {
+    position: static;
+    transform: none;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 24px;
+    padding: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .tab-btn {
-    padding: 12px 15px;
-    font-size: 0.9rem;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    border-bottom: none;
+    border-radius: 8px;
   }
 
-  .media-grid {
+  .tab-btn.active {
+    background-color: #005baa;
+    color: white;
+  }
+
+  .press-container {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+
+  .miller-column {
+    padding: 20px;
+    margin-bottom: 28px;
+  }
+
+  .miller-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .miller-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+
+  .miller-info h3 {
+    font-size: 1.15rem;
+  }
+
+  .miller-text {
+    font-size: 0.95rem;
+    padding-left: 14px;
+  }
+
+  .press-grid {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .news-content {
+    padding: 18px;
+  }
+
+  .news-meta {
+    gap: 8px;
+  }
+
+  .press-sidebar {
+    gap: 20px;
+  }
+
+  .press-contacts {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .press-contact {
+    min-width: 0;
+  }
+
+  .journals-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .journal-item {
+    padding: 24px 18px;
+  }
+
+  .press-service {
+    padding: 24px 18px;
+  }
+
+  .press-service h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
 
   .subscription-buttons {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
   }
 
   .subscription-btn {
     justify-content: center;
+  }
+
+  /* ----- Stub ----- */
+  .stub {
+    padding: 100px 0 60px;
+  }
+
+  .stub__box {
+    padding: 40px 24px;
+  }
+
+  .stub__icon {
+    font-size: 3rem;
+  }
+
+  .stub__title {
+    font-size: 1.5rem;
+  }
+
+  /* ----- Footer ----- */
+  .footer {
+    padding: 48px 0 28px;
+  }
+
+  .footer-content {
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding-top: 24px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* ===== Малые мобильные: ≤ 576px ===== */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .about-hero h1,
+  .contacts-hero h1,
+  .investors-hero h1,
+  .press-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-hero p,
+  .contacts-hero p,
+  .investors-hero p,
+  .press-hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .content-section .section-title {
+    font-size: 1.4rem;
+  }
+
+  .news-card,
+  .info-card,
+  .address-card,
+  .phone-card,
+  .email-card {
+    padding: 18px 16px;
+  }
+
+  .news-title {
+    font-size: 1.05rem;
+  }
+
+  .news-excerpt {
+    font-size: 0.9rem;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+
+  .stub__box {
+    padding: 32px 18px;
+  }
+
+  .stub__icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .tab-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .media-grid,
+  .info-grid,
+  .journals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .footer-link,
+  .footer-column p {
+    font-size: 13px;
+  }
+}
+
+/* ===== Уважение к настройкам пользователя ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
   }
 }
